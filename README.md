@@ -17,6 +17,10 @@ To actually use the RotatingBorder component:
 }
 ```
 
+### Demo
+
+<img width="581" alt="Screenshot 2025-03-04 at 20 27 00" src="https://github.com/user-attachments/assets/367cd789-503b-45b7-b9c9-daaaed1c5473" />
+
 ### Usage Examples
 
 Here are some examples of how you can use this component with different shadcn/ui components:
