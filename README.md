@@ -2,14 +2,20 @@
 Flexible wrapper that can add a rotating border effect to any component.
 Works with any component (buttons, cards, images, divs, etc.) while preserving the original component's functionality and appearance.
 
-### Customization
-- `borderWidth`: Controls the thickness of the border
-- `borderColor`: Sets the color of the glowing border
-- `rotationSpeed`: Controls how fast the border rotates
-- `highlightPercentage`: Determines how much of the border is visible vs. transparent
-- `borderRadius`: Allows different shapes (rounded, square, etc.)
-- `containerClassName`: Apply custom classes to the outer container
-- `contentClassName`: Apply custom classes to the inner content wrapper
+The bulk of these files are used to initialize the demo web page that displays the rotating border examples.
+To actually use the RotatingBorder component:
+1. Simply copy the `rotating-border.tsx` file into your project's `/components/` folder.
+2. Add the missing spin animation to your `globals.css` file:
+```css
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+```
 
 ### Usage Examples
 
@@ -58,6 +64,15 @@ Here are some examples of how you can use this component with different shadcn/u
   />
 </RotatingBorder>
 ```
+
+### Customization
+- `borderWidth`: Controls the thickness of the border
+- `borderColor`: Sets the color of the glowing border
+- `rotationSpeed`: Controls how fast the border rotates
+- `highlightPercentage`: Determines how much of the border is visible vs. transparent
+- `borderRadius`: Allows different shapes (rounded, square, etc.)
+- `containerClassName`: Apply custom classes to the outer container
+- `contentClassName`: Apply custom classes to the inner content wrapper
 
 ### Implementation Notes
 
